@@ -1,38 +1,112 @@
+/* default */
 button {
+  font-family: Arial, "sans-serif";
+  font-size: 14px;
   color: white;
+  background-color: #22262a;
   border-radius: 2px;
-  padding: 5px 25px;
+  padding: 22px 25px;
+  /* not sure that padding is accurate
+   font is not
+   what's the border radius */
+  border: #22262a;
+}
+.button-defaultHover:hover {
+  background-color: #13161a;
+  border: #13161a;
+}
+.button-defaultOutline {
+  background-color: white;
+  border: 2px solid #22262a;
+  color: #22262a;
+}
+.button-defaultShadow {
+  background-color: rgba(34, 38, 42, 0.1);
+  border: 2px rgba(34, 38, 42, 0.1);
+  color: #22262a;
 }
 
+/* primary */
 .button-primary {
-  background-color: #0069d9;
-  border: #0069d9;
+  background-color: #33a0ff;
+  border: 2px solid #33a0ff;
+}
+.button-primaryHover:hover {
+  background-color: #2e90e5;
+  border: 2px solid #2e90e5;
+}
+.button-primaryOutline {
+  background-color: white;
+  border: 2px solid #33a0ff;
+  color: #33a0ff;
+}
+.button-primaryShadow {
+  background-color: rgba(51, 160, 255, 0.1);
+  border: 2px rgba(51, 160, 255, 0.1);
+  color: #33a0ff;
 }
 
+/* danger */
 .button-danger {
-  background-color: rgb(203, 68, 74);
-  border: rgb(203, 68, 74);
+  background-color: #ff4858;
+  border: #ff4858;
+}
+.button-dangerHover:hover {
+  background-color: #f53848;
+  border: #f53848;
+}
+.button-dangerOutline {
+  background-color: white;
+  border: 2px solid #ff4858;
+  color: #ff4858;
+}
+.button-dangerShadow {
+  background-color: rgba(255, 72, 88, 0.1);
+  border: 2px rgba(255, 72, 88, 0.1);
+  color: #ff4858;
 }
 
-.button-warning {
-  background-color: rgb(238, 189, 66);
-  border: rgb(238, 189, 66);
-  color: black;
-}
-
+/* success */
 .button-success {
-  background-color: rgb(83, 164, 81);
-  border: rgb(83, 164, 81);
+  background-color: #0ad00a;
+  border: #0ad00a;
+}
+.button-successHover:hover {
+  background-color: #07c107;
+  border: #07c107;
+}
+.button-successOutline {
+  background-color: white;
+  border: 2px solid #0ad00a;
+  color: #0ad00a;
+}
+.button-successShadow {
+  background-color: rgba(10, 208, 10, 0.1);
+  border: 2px rgba(10, 208, 10, 0.1);
+  color: #0ad00a;
 }
 
+/* warning */
+.button-warning {
+  background-color: #ffc600;
+  border: #ffc600;
+}
+.button-warningHover:hover {
+  background-color: #ebb600;
+  border: #ebb600;
+}
+.button-warningOutline {
+  background-color: white;
+  border: 2px solid #ffc600;
+  color: #ffc600;
+}
+.button-warningShadow {
+  background-color: rgba(255, 198, 0, 0.1);
+  border: 2px rgba(255, 198, 0, 0.1);
+  color: #ffc600;
+}
+/* larger size */
 .button-large {
-  padding: 10px 50px;
-}
-.button-hover:hover {
-  background-color: #030a57;
-}
-.button-outline {
-  background-color: rgb(155, 213, 154);
-  border: 2px solid rgb(83, 164, 81);
-  color: red;
+  padding: 28px 25px;
+  font-size: 16px;
 }

@@ -3,7 +3,17 @@ import "./Button.css";
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = props => {
   let classList = "";
-  let types = ["primary", "danger", "success", "warning"];
+  let types = [
+    "primary",
+    "danger",
+    "success",
+    "warning",
+    "primaryShadow",
+    "dangerShadow",
+    "successShadow",
+    "warningShadow",
+    "defaultShadow"
+  ];
   if (types.includes(props.type)) {
     classList += `button-${props.type}`;
   }
@@ -11,10 +21,10 @@ const Button = props => {
     classList += ` button-large`;
   }
   if (props.hover) {
-    classList += ` button-hover`;
+    classList += ` button-${props.type}Hover`;
   }
   if (props.outline) {
-    classList += ` button-outline`;
+    classList += ` button-${props.type}Outline`;
   }
   return (
     <button className={classList} onClick={props.onClick}>
