@@ -14,11 +14,14 @@ export default function InputWithButton(props) {
   return (
     <div>
       <Form
-        onSumbit={props.action}
+        onChange={props.onChange}
+        onSubmit={props.action}
         place={props.placeholder}
         className={classList}
       />
-      <button className={buttonClass}>{props.title}</button>
+      <button onClick={props.action} className={buttonClass}>
+        {props.title}
+      </button>
     </div>
   );
 }

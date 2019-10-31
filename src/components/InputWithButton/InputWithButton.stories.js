@@ -3,8 +3,14 @@ import { storiesOf } from "@storybook/react";
 
 import InputWithButton from "./InputWithButton.js";
 
-function myFunction() {
-  alert("This is a callback!");
+let inputValue = "";
+function onChange(e) {
+  e.preventDefault();
+  inputValue = e.target.value;
+}
+function myFunction(e) {
+  e.preventDefault();
+  alert(`This is a callback! You wrote " ${inputValue} "`);
 }
 
 storiesOf("Input with Button", module)
@@ -13,6 +19,7 @@ storiesOf("Input with Button", module)
       medium
       placeholder="Voucher code"
       title="Redeem"
+      onChange={onChange}
       action={myFunction}
     />
   ))
@@ -21,6 +28,7 @@ storiesOf("Input with Button", module)
       large
       placeholder="Voucher code"
       title="Redeem"
+      onChange={onChange}
       action={myFunction}
     />
   ));
