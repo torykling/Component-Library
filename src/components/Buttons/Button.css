@@ -10,6 +10,9 @@ button {
    font is not */
   border: #22262a;
 }
+button:focus {
+  outline: none;
+}
 .button-defaultHover:hover {
   background-color: #13161a;
   border: #13161a;

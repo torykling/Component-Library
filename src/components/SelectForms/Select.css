@@ -6,6 +6,9 @@ select {
   background-color: white;
   border-radius: 4px;
 }
+select:focus {
+  outline: none;
+}
 .medium {
   height: 46px;
 }

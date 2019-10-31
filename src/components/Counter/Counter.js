@@ -4,11 +4,11 @@ export class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      number: 0
+      number: this.props.value
     };
   }
   increment = () => {
-    if (this.state.number !== this.props.max) {
+    if (this.state.number + this.props.step <= this.props.max) {
       if (this.props.step) {
         let newStep = this.props.step;
         let count = this.state.number + newStep;
@@ -21,7 +21,7 @@ export class Counter extends Component {
   };
 
   decrement = () => {
-    if (this.state.number !== this.props.min) {
+    if (this.state.number - this.props.step >= this.props.min) {
       if (this.props.step) {
         let newStep = this.props.step;
         let count = this.state.number - newStep;

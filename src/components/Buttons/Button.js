@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-import Icon from "../Icon.js";
+
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = props => {
   let classList = "";
