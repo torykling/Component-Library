@@ -3,10 +3,6 @@ import { storiesOf } from "@storybook/react";
 
 import Button from "./Button";
 
-const outline = {
-  backgroundColor: "white"
-};
-
 storiesOf("Button", module)
   .add("Primary", () => <Button hover type="primary" label="Do something" />)
   .add("Danger", () => <Button hover type="danger" label="Do something" />)
