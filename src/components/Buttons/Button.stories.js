@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-
 import Button from "./Button";
 
 storiesOf("Button", module)
@@ -84,4 +83,13 @@ storiesOf("Button", module)
   ))
   .add("Default Shadow Large", () => (
     <Button type="defaultShadow" large label="Do something" />
+  ))
+  // icons
+  .add("Cart", () => <Button type="primaryShadow" cart label="" />)
+  .add("Heart", () => <Button type="primaryShadow" heart label="" />)
+  .add("Add to cart", () => (
+    <Button type="primaryShadow" cartText label="Add To Cart" />
+  ))
+  .add("Add to favorites", () => (
+    <Button type="primaryShadow" heartText label="Add To Favorites" />
   ));
