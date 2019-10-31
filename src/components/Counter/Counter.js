@@ -9,21 +9,23 @@ export class Counter extends Component {
     };
   }
   increment = () => {
-    if (props.step) {
-      this.setState({ step: props.step });
-      this.setState({ number: this.state.number + this.state.step });
-    } else {
+    // if (props.step) {
+    //     let newStep = props.step
+    //     let count = this.state.number + newStep
+    //   this.setState({ step: newStep });
+    //   this.setState({ number: count});
+    // } else {
     let newCount = this.state.number + 1;
     this.setState({ number: newCount });
   };
 
   decrement = () => {
-    if (props.step) {
-        let newStep = props.step
-        let count= this.state.number - newStep
-      this.setState({ step: newStep });
-      this.setState({ number: count });
-    } else {
+    // if (props.step) {
+    //     let newStep = props.step
+    //     let count= this.state.number - newStep
+    //   this.setState({ step: newStep });
+    //   this.setState({ number: count });
+    // } else {
     let newCount = this.state.number - 1;
     this.setState({ number: newCount });
   };
