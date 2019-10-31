@@ -7,13 +7,14 @@ const Select = props => {
     classList += ` medium`;
   }
   if (props.small) {
-    classList += ` large`;
+    classList += ` small`;
+  }
+  if (props.shadow) {
+    classList += ` shadow`;
   }
   return (
     <select className={classList}>
-      <option></option>
-      <option></option>
-      <option></option>
+      <option>Select</option>
     </select>
   );
 };
