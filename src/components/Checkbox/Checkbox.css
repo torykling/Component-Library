@@ -1,7 +1,31 @@
+.checkContainer {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
 .checkbox {
   opacity: 0;
+  z-index: 1;
+  position: absolute;
+  width: 18px;
+  height: 18px;
 }
-.blue {
-  background-image: url("./checked1.svg");
-  background-size: cover;
+.checkImage {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+.checkboxLabel p {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.checkboxLabel {
+  width: 300px;
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
