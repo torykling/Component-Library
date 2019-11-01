@@ -14,15 +14,15 @@ export class Checkbox extends Component {
   }
   render() {
     return (
-      <label class="checkboxLabel">
+      <div class="checkboxLabel">
         <input
           className="checkbox"
           type="checkbox"
           checked={this.state.isChecked}
         />
-        <span className="blue" />
+        {/* <div className="blue" /></div> */}
         <p>{this.props.message}</p>
-      </label>
+      </div>
     );
   }
 }

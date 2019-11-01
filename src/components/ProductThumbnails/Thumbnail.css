@@ -1,0 +1,132 @@
+.firstClass,
+.secondClass {
+  width: 270px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #f6f7f8;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+hr {
+  width: 230px;
+  border: 1px solid #f6f7f8;
+}
+.title {
+  font-family: Arial;
+  font-size: 14;
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+}
+.hidden {
+  display: none;
+}
+.doubleUp {
+  width: 250px;
+  height: 197px;
+  overflow: hidden;
+  position: relative;
+}
+.secondClass {
+  background-color: #fafafb;
+  border: none;
+}
+.thirdClass {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  height: 224px;
+  width: 570px;
+  border: 2px solid #f6f7f8;
+  margin: 0;
+  padding: 10px;
+}
+.thirdClass:hover {
+  background-color: #fafafb;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 157px;
+  height: 98px;
+  margin: auto 0 auto 40px;
+  justify-content: space-evenly;
+}
+.horzTitle {
+  margin: 0;
+  font-family: Arial;
+  font-size: 14;
+  width: 120%;
+  text-align: left;
+}
+.fourthClass {
+  width: 324px;
+  height: 158px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin: 0;
+  padding: 10px;
+}
+
+.inline {
+  width: 870px;
+  height: 288px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.inlineImageContainer {
+  width: 270px;
+  height: 270px;
+  border: 2px solid #f6f7f8;
+  padding: 10px;
+}
+.inlineTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+.reviewContainer {
+  display: flex;
+  flex-direction: row;
+  width: 470px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+.inline a {
+  text-decoration: none;
+  color: #33a0ff;
+  font-size: 14px;
+  font-family: Arial;
+}
+.inline h2 {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: normal;
+}
+.inline hr {
+  width: 470px;
+  border: 1px solid #f6f7f8;
+}
+.inline h6 {
+  margin: 0 10px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #c1c8ce;
+  font-weight: normal;
+}
+.inline p {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+}
