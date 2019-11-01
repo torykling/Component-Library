@@ -3,25 +3,31 @@ import Form from "../EmailForms/Form.js";
 import "./InputWithButton.css";
 
 export default function InputWithButton(props) {
-  let classList = "";
-  let buttonClass = "";
-  let divClass = "";
-  if (props.large) {
-    divClass += "bigDiv";
-    classList += "large";
-    buttonClass += "bigButton";
+  if (props.medium) {
+    return (
+      <div>
+        <Form
+          onChange={props.onChange}
+          onSubmit={props.action}
+          place={props.placeholder}
+          medium
+        />
+        <button onClick={props.action}>{props.title}</button>
+      </div>
+    );
+  } else {
+    return (
+      <div class="bigDiv">
+        <Form
+          onChange={props.onChange}
+          onSubmit={props.action}
+          place={props.placeholder}
+          large
+        />
+        <button onClick={props.action} className="bigButton">
+          {props.title}
+        </button>
+      </div>
+    );
   }
-  return (
-    <div>
-      <Form
-        onChange={props.onChange}
-        onSubmit={props.action}
-        place={props.placeholder}
-        className={classList}
-      />
-      <button onClick={props.action} className={buttonClass}>
-        {props.title}
-      </button>
-    </div>
-  );
 }

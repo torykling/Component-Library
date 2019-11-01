@@ -1,15 +1,26 @@
-/* div {
-    width:
-    height: 
-} */
-button {
-  background-color: #33a0ff;
+div {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
 }
 
-/* .bigDiv {
+button {
+  background-color: #33a0ff;
+  height: 46px;
+  text-align: center;
+  padding: 0 25px;
+  z-index: 1;
+  margin-top: 5px;
+  position: relative;
+  right: 70px;
+}
 
+.bigDiv {
+  height: 60px;
+  width: 369px;
 }
 
 .bigButton {
-
-} */
+  height: 60px;
+}
