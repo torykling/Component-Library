@@ -5,7 +5,16 @@ select {
   border: 2px solid #f1f3f4;
   background-color: white;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./arrowDown.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 250px;
+  padding: 0 10px;
 }
+
 select:focus {
   outline: none;
 }
@@ -15,6 +24,7 @@ select:focus {
 .small {
   width: 200px;
   height: 38px;
+  background-position-x: 170px;
 }
 .shadow {
   background-color: #fafafb;

@@ -1,11 +1,11 @@
-div {
+.mediumDiv {
   width: 300px;
   height: 46px;
   display: flex;
   flex-direction: row;
 }
 
-button {
+.inputButton {
   background-color: #33a0ff;
   height: 46px;
   text-align: center;
@@ -17,6 +17,8 @@ button {
 }
 
 .bigDiv {
+  display: flex;
+  flex-direction: row;
   height: 60px;
   width: 369px;
 }

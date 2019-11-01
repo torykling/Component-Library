@@ -1,0 +1,7 @@
+.checkbox {
+  opacity: 0;
+}
+.blue {
+  background-image: url("./checkbox - checked.svg");
+  background-size: cover;
+}

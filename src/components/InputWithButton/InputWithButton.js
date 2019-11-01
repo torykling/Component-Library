@@ -5,14 +5,16 @@ import "./InputWithButton.css";
 export default function InputWithButton(props) {
   if (props.medium) {
     return (
-      <div>
+      <div class="mediumDiv">
         <Form
           onChange={props.onChange}
           onSubmit={props.action}
           place={props.placeholder}
           medium
         />
-        <button onClick={props.action}>{props.title}</button>
+        <button onClick={props.action} className="inputButton">
+          {props.title}
+        </button>
       </div>
     );
   } else {
@@ -24,7 +26,7 @@ export default function InputWithButton(props) {
           place={props.placeholder}
           large
         />
-        <button onClick={props.action} className="bigButton">
+        <button onClick={props.action} className="inputButton bigButton">
           {props.title}
         </button>
       </div>
