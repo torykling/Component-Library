@@ -14,7 +14,9 @@ const Select = props => {
   }
   return (
     <select className={classList}>
-      <option>Select</option>
+      <option selected="selected">{props.option1}</option>
+      <option>{props.option2}</option>
+      <option>{props.option3}</option>
     </select>
   );
 };
