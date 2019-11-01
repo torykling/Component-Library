@@ -3,6 +3,7 @@
   height: 46px;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .inputButton {
@@ -12,8 +13,10 @@
   padding: 0 25px;
   z-index: 1;
   margin-top: 5px;
-  position: relative;
-  right: 70px;
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .bigDiv {
@@ -21,8 +24,10 @@
   flex-direction: row;
   height: 60px;
   width: 369px;
+  position: relative;
 }
 
 .bigButton {
   height: 60px;
+  position: absolute;
 }
