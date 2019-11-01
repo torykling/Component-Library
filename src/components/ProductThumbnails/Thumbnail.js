@@ -12,22 +12,29 @@ import Button from "../Buttons/Button.js";
 export class Thumbnail extends Component {
   constructor(props) {
     super(props);
-    this.classList = " hidden";
+    this.state = {
+      didMouseEnter: false
+    };
   }
-  mouseOver = () => {
-    this.classList -= " hidden";
+  MouseEnter = () => {
+    this.setState({ didMouseEnter: true });
   };
-  mouseLeave = () => {
-    this.classList += " hidden";
+  MouseLeave = () => {
+    this.setState({ didMouseEnter: false });
   };
   render() {
     if (this.props.block && this.props.white) {
       return (
-        <div onMouseEnter={this.mouseOver} className="firstClass">
-          <div className="doubleUp">
+        <div className="firstClass">
+          <div
+            className="laptopContainer"
+            onMouseEnter={this.MouseEnter}
+            onMouseLeave={this.MouseLeave}
+          >
             <Laptop />
-            <WhiteDiv className={this.classList} />
+            {this.state.didMouseEnter ? <WhiteDiv /> : null}
           </div>
+
           <hr />
           <h3 className="title">{this.props.title}</h3>
           <Star />
@@ -37,8 +44,14 @@ export class Thumbnail extends Component {
     } else if (this.props.block && this.props.blue) {
       return (
         <div className="secondClass">
-          <Laptop />
-          <BlueDiv className={this.classList} />
+          <div
+            className="laptopContainer"
+            onMouseEnter={this.MouseEnter}
+            onMouseLeave={this.MouseLeave}
+          >
+            <Laptop />
+            {this.state.didMouseEnter ? <BlueDiv /> : null}
+          </div>
           <hr />
           <h3 className="title">{this.props.title}</h3>
           <Star />
@@ -48,7 +61,9 @@ export class Thumbnail extends Component {
     } else if (this.props.block && this.props.horizontal) {
       return (
         <div className="thirdClass">
-          <Laptop />
+          <div className="laptopContainer">
+            <Laptop />
+          </div>
           <div className="textBox">
             <h3 className="horzTitle">{this.props.title}</h3>
             <Star />
@@ -72,7 +87,9 @@ export class Thumbnail extends Component {
         <div className="inline">
           <div className="inlineImageContainer">
             <Hot />
-            <Laptop />
+            <div className="laptopContainer">
+              <Laptop />
+            </div>
           </div>
           <div className="inlineTextContainer">
             <h2>{this.props.title}</h2>

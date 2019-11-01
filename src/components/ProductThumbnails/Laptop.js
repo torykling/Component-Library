@@ -1,13 +1,7 @@
 import React from "react";
 import laptop from "./Images/laptop.png";
+import "./Laptop.css";
 
 export default function Laptop() {
-  return <img style={laptopStyle} src={laptop} />;
+  return <img className="laptopClass" src={laptop} />;
 }
-
-const laptopStyle = {
-  width: "236px",
-  height: "153px",
-  alignSelf: "center",
-  position: "absolute"
-};

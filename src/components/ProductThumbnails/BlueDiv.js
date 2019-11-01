@@ -11,12 +11,15 @@ export default function BlueDiv() {
 
 const blueStyle = {
   width: "102px",
-  height: "46px"
+  height: "46px",
+  margin: "40px 0"
 };
 
 const blueDivStyle = {
   textAlign: "center",
-  width: "250px",
-  height: "197px",
-  backgroundColor: "rgba(255,255,255,.95)"
+  width: "236px",
+  height: "153px",
+  zIndex: "1",
+  backgroundColor: "rgba(255,255,255,.95)",
+  position: "absolute"
 };

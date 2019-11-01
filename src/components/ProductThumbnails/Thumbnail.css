@@ -21,13 +21,9 @@ hr {
   text-align: center;
   margin: 10px auto;
 }
-.hidden {
-  display: none;
-}
-.doubleUp {
-  width: 250px;
-  height: 197px;
-  overflow: hidden;
+.laptopContainer {
+  height: 153px;
+  width: 236px;
   position: relative;
 }
 .secondClass {

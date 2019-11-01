@@ -14,12 +14,12 @@ const whiteButtonStyle = {
   width: "102px",
   margin: "40px auto"
 };
+
 const whiteStyle = {
   textAlign: "center",
-  width: "250px",
-  height: "197px",
+  width: "236px",
+  height: "153px",
   zIndex: "1",
   backgroundColor: "rgba(255,255,255,.95)",
-  position: "absolute",
-  textAlign: "center"
+  position: "absolute"
 };
