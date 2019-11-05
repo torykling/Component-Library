@@ -4,7 +4,7 @@
 
 ## Goal
 
-The goal of this project was to create a component library that can be used to import a series of styled react components. Once imported, these components are ready to be used in a react app to save time creating components such as stylish buttons, user input fields, and product thumbnails.
+The goal of this project was to create a component library that can be used to import a series of styled React components. Once imported, these components are ready to be used in a React app to save time creating components such as stylish buttons, user input fields, and product thumbnails.
 
 ## Languages & Programs Used
 
@@ -21,4 +21,4 @@ Styling all of the components was time consuming and required much attention to 
 ## Installation Instructions
 
 To check out the styled components, visit the deployed site at https://admiring-minsky-ab4617.netlify.com/ !
-To download the component library, go to https://www.npmjs.com/package/componentlibrary-toryklingenstein , copy the install command to the clipboard and paste it in the terminal.
+To download the component library, go to https://www.npmjs.com/package/componentlibrary-toryklingenstein , copy the install command to the clipboard and run it in the terminal.
