@@ -21,4 +21,4 @@ Styling all of the components was time consuming and required much attention to 
 ## Installation Instructions
 
 To check out the styled components, visit the deployed site at https://admiring-minsky-ab4617.netlify.com/ !
-To download the component library, go to https://www.npmjs.com/package/componentlibrary-toryklingenstein , copy the install command to the clipboard and run it in the terminal.
+To download the component library, go to https://www.npmjs.com/package/componentlibrary-toryklingenstein , copy the install command to the clipboard and rung it in the terminal.
